@@ -1,0 +1,808 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/******************************************************************* Common For All **************************************************************************/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f4eee5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/******************************************************************* Nevigation Bar **************************************************************************/
+nav {
+  justify-content: baseline;
+  background-color: #f7e9d9;
+  border-bottom: 1px solid #918f9d;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #43424f;
+  display: block;
+  padding: 1.2em 1.5em;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav li:hover {
+  background-color: #f4eee5;
+}
+
+nav a:hover {
+  color: #ff6612;
+}
+
+.logoOfTheWebsite {
+  display: block;
+  padding-left: 1rem;
+  z-index: 999;
+}
+
+.logoOfTheWebsite img {
+  margin-bottom: -23px;
+  margin-top: -25px;
+  height: 3.5rem;
+  z-index: 999;
+  border-radius: 25px 5px;
+}
+
+.menu-main {
+  padding: 0;
+}
+
+.menu-sub > * {
+  display: flex;
+}
+
+.menu-sub {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #918f9d;
+  border-bottom: 1px solid #918f9d;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #f4eee5;
+  display: none;
+  color: #918f9d;
+  padding-left: 11rem;
+}
+
+.menu-catagory {
+  color: #4b5260;
+}
+
+nav li:hover .menu-sub {
+  display: block;
+}
+
+.menu-sub li {
+  display: block;
+}
+
+.menu-sub a {
+  padding: 0.3rem 0;
+  font-weight: normal;
+}
+
+.menu-catagory {
+  margin: 2.5em 0 0.5em;
+}
+
+/* :first-of-type is the property where in div firt div line is goin to be selected*/
+.menu-catagory:first-of-type {
+  margin-top: 0;
+}
+
+.menu-col-1 {
+  float: left;
+}
+
+.menu-col-1 {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerandUl {
+  margin: 2.5rem;
+}
+
+.headerandUl ul {
+  margin-top: 1rem;
+}
+
+.menu-col-1 img {
+  height: 25rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+/******************************************************************* fullPage **************************************************************************/
+
+.WrapperFullPage {
+  display: flex;
+  justify-content: center;
+}
+
+.fullPage {
+  width: 1220px;
+}
+
+/******************************************************************* backToNavBar **************************************************************************/
+
+.planYourTrip {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  /* Adjust the distance from the bottom as needed */
+  right: 20px;
+  /* Adjust the distance from the right as needed */
+  z-index: 999;
+  /* Ensure the button appears on top of other content */
+}
+
+.planYourTrip a {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #ff6612;
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 15px 35px;
+  color: white;
+}
+
+.planYourTrip a:hover {
+  font-size: 1rem;
+}
+
+.backToNavBar {
+  margin-top: 1rem;
+  width: 1220px;
+}
+
+.backToNavBar ul {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.spanOrange {
+  color: #ff6612;
+  font-weight: bold;
+}
+
+/******************************************************************* pictureAndPlan **************************************************************************/
+.pictureAndPlan {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.pictureOfTourDestination {
+  width: 750px;
+  height: 450px;
+}
+
+.pictureOfTourDestination img {
+  width: 750px;
+  height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px 10px;
+  border-radius: 2px;
+}
+
+.planInfo {
+  width: 460px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  border-radius: 2px;
+  border-top: 1px solid #e7c4b5;
+  border-right: 1px solid #e7c4b5;
+  border-bottom: 1px solid #e7c4b5;
+}
+
+.planInfo h1 {
+  color: #3b404b;
+  text-align: left;
+  padding-bottom: 1rem;
+  width: 420px;
+}
+
+.spanOrange2 {
+  color: #ff6612;
+}
+
+.planInfo h2 {
+  color: #3b404b;
+  width: 420px;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 2px solid #e7c4b5;
+}
+
+.planInfo ul {
+  color: #586271;
+  width: 420px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.planInfo ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.planInfo img {
+  height: 4rem;
+  width: 4rem;
+  padding: 10px;
+}
+
+.planInfo p {
+  text-align: center;
+}
+
+/******************************************************************* shortInfoPlanEnquiryFormAndwhyTourToIndia **************************************************************************/
+.shortInfoPlanEnquiryFormAndwhyTourToIndia {
+  width: 1220px;
+  display: flex;
+}
+
+.leftDiv {
+  width: 67%;
+}
+
+.rightDiv {
+  margin-top: 1.5rem;
+  float: right;
+  width: 32%;
+}
+
+.WrapperShortInfo {
+  margin-top: 1.5rem;
+  border: 2px solid #e7c4b5;
+  border-radius: 2px;
+}
+
+.shortInfo {
+  margin: 0 2rem 2rem 2rem;
+}
+
+.shortInfo p {
+  color: #3b404b;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.enquiryForm {
+  float: right;
+  text-align: center;
+  width: 350px;
+  height: 68rem;
+  border: 2px solid grey;
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+.enquiryForm h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #3b404b;
+  font-size: 1.5rem;
+}
+
+.enquiryForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.enquiryForm label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #3b404b;
+}
+
+.enquiryForm input[type="text"],
+.enquiryForm input[type="email"],
+.enquiryForm input[type="tel"],
+.enquiryForm select,
+.enquiryForm input[type="date"],
+.enquiryForm input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: #3b404b;
+  background-color: #fff;
+}
+
+.enquiryForm input[type="text"]:focus,
+.enquiryForm input[type="email"]:focus,
+.enquiryForm input[type="tel"]:focus,
+.enquiryForm select:focus,
+.enquiryForm input[type="date"]:focus,
+.enquiryForm input[type="number"]:focus {
+  outline: none;
+  border-color: #ff6612;
+}
+
+.enquiryForm select {
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 10px 6px;
+}
+
+.enquiryForm fieldset {
+  border: none;
+  margin-top: 1rem;
+}
+
+.enquiryForm legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #3b404b;
+}
+
+.enquiryForm input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.enquiryForm input[type="submit"] {
+  background-color: #ff6612;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.enquiryForm input[type="submit"]:hover,
+.enquiryForm input[type="submit"]:focus {
+  background-color: #3b404b;
+  color: #ff6612;
+}
+
+.Wrapperplan {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  border: 2px solid #e7c4b5;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 5px 5px;
+}
+
+.Wrapperplan:hover {
+  box-shadow: orangered 0px 1px 5px 5px;
+  transition: all 10s ease-in-out;
+}
+
+.planDiv {
+  margin-top: 2rem;
+  width: 770px;
+  margin-bottom: 2rem;
+}
+
+.dayAndDayPlan {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.dayAndDayPlan p:hover {
+  color: #ff6612;
+  transition: all 0s ease-in-out;
+  cursor: default;
+}
+
+.day {
+  display: flex;
+  flex-direction: row;
+}
+
+.spanOrange3 {
+  color: #ff6612;
+  width: 75px;
+}
+
+.planDescription h5 {
+  margin-top: 1.5rem;
+  color: #3b404b;
+}
+
+.planDescription h4 {
+  color: #3b404b;
+}
+
+.planDescription ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.item li {
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: small;
+}
+
+.planDescription p {
+  color: #3b404b;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.planDescription img {
+  height: 2.5rem;
+}
+
+/******************************************************************* whyTourToIndia **************************************************************************/
+.WrapperwhyTourToIndia {
+  margin-top: 2rem;
+  width: 350px;
+  float: right;
+}
+
+.whyTourToIndia {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 350px;
+  border: 2px solid #e7c4b5;
+  border-radius: 5px;
+}
+
+.whyTourToIndia ul li img {
+  height: 3rem;
+  margin-top: 1.5rem;
+}
+
+.whyTourToIndia ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e7c4b5;
+}
+
+.whyTourToIndia h2 {
+  color: #3b404b;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1.2rem;
+  border-bottom: 1px solid #e7c4b5;
+}
+
+.whyTourToIndia ul li h3 {
+  text-align: left;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #43404b;
+}
+
+.whyTourToIndia ul li p {
+  color: #43404b;
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 250px;
+}
+
+/******************************************************************* Related Tour Packages **************************************************************************/
+
+.bestSellingTourPackages {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.bestSellingPackagesDivHeading,
+.PackagesDivHeading h2 {
+  font-weight: bolder;
+  text-align: left;
+  color: #38404f;
+}
+
+.PackagesTourDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.3rem;
+  gap: 1rem;
+  width: 1220px;
+}
+
+.PackagesTourDiv > * {
+  width: 15.6rem;
+  height: 14.5rem;
+}
+
+.TourPackage1,
+.TourPackage2,
+.TourPackage3,
+.TourPackage4,
+.TourPackage5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+.TourPackage1 img,
+.TourPackage2 img,
+.TourPackage3 img,
+.TourPackage4 img,
+.TourPackage5 img {
+  width: 15.5rem;
+  height: 11rem;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.PackagesTourDiv h3 {
+  margin-top: 0.2rem;
+  padding-left: 10px;
+  color: #3e3f54;
+}
+
+.PackagesTourDiv p {
+  padding-left: 10px;
+  color: #918f9d;
+}
+
+.TourPackage1 img:hover,
+.TourPackage2 img:hover,
+.TourPackage3 img:hover,
+.TourPackage4 img:hover,
+.TourPackage5 img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.TourPackage1:hover,
+.TourPackage2:hover,
+.TourPackage3:hover,
+.TourPackage4:hover,
+.TourPackage5:hover {
+  box-shadow: #ff6612 0px 5px 10px;
+  z-index: 999;
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+.TourPackage1 a:hover + .TourPackage1HP {
+  margin-top: 0.3rem;
+}
+
+.TourPackage2 a:hover + .TourPackage1HP {
+  margin-top: 0.3rem;
+}
+
+.TourPackage3 a:hover + .TourPackage1HP {
+  margin-top: 0.3rem;
+}
+
+.TourPackage4 a:hover + .TourPackage1HP {
+  margin-top: 0.3rem;
+}
+
+.TourPackage5 a:hover + .TourPackage1HP {
+  margin-top: 0.3rem;
+}
+
+.TourPackage1HP {
+  text-align: left;
+  width: 100%;
+}
+
+/******************************************************************* EndSection **************************************************************************/
+.WrapperEndSection {
+  display: flex;
+  justify-content: center;
+  background-color: #394048;
+  margin-top: 4rem;
+}
+
+.endSection {
+  display: flex;
+  flex-direction: column;
+  color: #f8f8f9;
+  width: 1220px;
+}
+
+.firstHalf {
+  display: flex;
+  flex-direction: row;
+}
+
+.inMainSection {
+  width: 433px;
+}
+
+.inMainSection h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.inMainSection ul {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.inMainSection li {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.inMainSection a {
+  color: #909499;
+}
+
+.legalPolicies {
+  height: fit-content;
+  width: 433px;
+}
+
+.legalPolicies h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.legalPolicies ul {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.legalPolicies li {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.legalPolicies a {
+  color: #909499;
+}
+
+.socialHandles {
+  height: fit-content;
+  width: 433px;
+}
+
+.socialHandles h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.socialHandles img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.socialHandles img:hover {
+  background-color: #ff6612;
+  border-radius: 5px;
+}
+
+.socialHandles ul {
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialHandles li {
+  margin-right: 0.5rem;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  border-top: 1px solid #909499;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.addressAndContactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-left: 1px solid #909499;
+}
+
+.addressAndContactDetails ul {
+  display: flex;
+  justify-content: center;
+}
+
+.addressAndContactDetails li {
+  margin-right: 1rem;
+  color: #909499;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.copyright p {
+  padding-top: 1rem;
+}
+
+.get {
+  padding-left: 2px;
+  padding-top: 5px;
+}
+
+.websiteName {
+  color: pink;
+}
+
+.copy {
+  color: #909499;
+  font-size: small;
+}
+
+.disclaimer {
+  padding-bottom: 0.5rem;
+}
+
+.disclaimer p {
+  font-size: small;
+}

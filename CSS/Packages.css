@@ -1,0 +1,837 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/******************************************************************* Common For All **************************************************************************/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f4eee5;
+  /* background-color: #6887; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/******************************************************************* Nevigation Bar **************************************************************************/
+nav {
+  justify-content: baseline;
+  background-color: #f7e9d9;
+  border-bottom: 1px solid #918f9d;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #43424f;
+  display: block;
+  padding: 1.2em 1.5em;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav li:hover {
+  background-color: #f4eee5;
+}
+
+nav a:hover {
+  color: #ff6612;
+}
+
+.logoOfTheWebsite {
+  display: block;
+  padding-left: 1rem;
+  z-index: 999;
+}
+
+.logoOfTheWebsite img {
+  margin-bottom: -23px;
+  margin-top: -25px;
+  height: 3.5rem;
+  z-index: 999;
+  border-radius: 25px 5px;
+}
+
+.menu-main {
+  padding: 0;
+}
+
+.menu-sub > * {
+  display: flex;
+}
+
+.menu-sub {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #918f9d;
+  border-bottom: 1px solid #918f9d;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #f4eee5;
+  display: none;
+  color: #918f9d;
+  padding-left: 11rem;
+}
+
+.menu-catagory {
+  color: #4b5260;
+}
+
+nav li:hover .menu-sub {
+  display: block;
+}
+
+.menu-sub li {
+  display: block;
+}
+
+.menu-sub a {
+  padding: 0.3rem 0;
+  font-weight: normal;
+}
+
+.menu-catagory {
+  margin: 2.5em 0 0.5em;
+}
+
+/* :first-of-type is the property where in div firt div line is goin to be selected*/
+.menu-catagory:first-of-type {
+  margin-top: 0;
+}
+
+.menu-col-1 {
+  float: left;
+}
+
+.menu-col-1 {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerandUl {
+  margin: 2.5rem;
+}
+
+.headerandUl ul {
+  margin-top: 1rem;
+}
+
+.menu-col-1 img {
+  height: 25rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+/********************************************************** Beach Short Intro and Picture ****************************************************************/
+
+.WrapperFullPage {
+  display: flex;
+  justify-content: center;
+}
+
+#fullPage {
+  width: 1300px;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.backToTop a {
+  display: block;
+  font-size: 2rem;
+  color: #ff6612;
+}
+
+.backToTop a:hover {
+  transform: scale(2);
+}
+
+.WrapperShortIntroAndPara {
+  display: flex;
+  justify-content: center;
+}
+
+.ShortIntroParaAndPic {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 1300px;
+}
+
+.ShortIntroPara {
+  width: 740px;
+}
+
+.backTo li a {
+  font-size: 0.8rem;
+  color: #6d7278;
+}
+
+.backTo li {
+  font-weight: small;
+  margin-right: 2px;
+  font-weight: bolder;
+  border: none;
+}
+
+.ShortIntroPara h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: #3b404b;
+  margin: 3rem 0 2rem 0;
+}
+
+.orangeSpan {
+  color: #ff6612;
+}
+
+.ShortIntroPara ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.ShortIntroPara p {
+  color: #6d7278;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.knowMoreAndSign {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.knowMore a {
+  color: #ff6612;
+  border-bottom: 1px solid #ff6612;
+}
+
+.knowMore {
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+}
+
+.knowMore:hover + .direction {
+  margin-left: 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.direction {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.direction:hover {
+  margin-left: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.direction a {
+  color: #ff6612;
+  border: none;
+  padding-left: 5px;
+}
+
+.bannerPic {
+  width: 35rem;
+}
+
+.bannerPic img {
+  width: 35rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px 10px;
+  border-radius: 150px 100px;
+}
+
+/********************************************************** Beach Packages Div's ****************************************************************/
+.Top-Indian-International-trending-Packages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.bestSellingTourPackages {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.bestSellingPackagesDivHeading,
+.PackagesDivHeading h2 {
+  font-weight: bolder;
+  text-align: left;
+  color: #38404f;
+}
+
+.PackagesTourDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.3rem;
+  gap: 1rem;
+  width: 1300px;
+}
+
+.PackagesTourDiv > * {
+  width: 15.6rem;
+  height: 14.5rem;
+}
+
+.TourPackage1,
+.TourPackage2,
+.TourPackage3,
+.TourPackage4,
+.TourPackage5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+.TourPackage1 img,
+.TourPackage2 img,
+.TourPackage3 img,
+.TourPackage4 img,
+.TourPackage5 img {
+  /* margin-top: 0.5rem; */
+  width: 15.5rem;
+  height: 11rem;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.PackagesTourDiv h3 {
+  margin-top: 0.2rem;
+  padding-left: 10px;
+  color: #3e3f54;
+}
+
+.PackagesTourDiv p {
+  padding-left: 10px;
+  color: #918f9d;
+}
+
+.TourPackage1 img:hover,
+.TourPackage2 img:hover,
+.TourPackage3 img:hover,
+.TourPackage4 img:hover,
+.TourPackage5 img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.TourPackage1:hover,
+.TourPackage2:hover,
+.TourPackage3:hover,
+.TourPackage4:hover,
+.TourPackage5:hover {
+  box-shadow: #ff6612 0px 5px 10px;
+  z-index: 999;
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+.TourPackage1 a:hover + .TourPackage1HP,
+.TourPackage2 a:hover + .TourPackage1HP,
+.TourPackage3 a:hover + .TourPackage1HP,
+.TourPackage4 a:hover + .TourPackage1HP,
+.TourPackage5 a:hover + .TourPackage1HP {
+  margin-top: 0.3rem;
+}
+
+.TourPackage1HP {
+  text-align: left;
+  width: 100%;
+}
+
+/********************************************************** popular Beaches In India (Blog) ****************************************************************/
+.WrapperPopularIndiaTourPackagesAllContent {
+  display: flex;
+  justify-content: center;
+}
+
+.indianTourBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1300px;
+  margin-top: 2rem;
+}
+
+.popularInIndia {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.popularInIndiaHeader {
+  color: #38404f;
+}
+
+.popular1 {
+  background-color: #ffe6c7;
+  padding: 22px;
+  width: 420px;
+  height: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* box-shadow: #ffe6c7 0px 5px 10px; */
+}
+
+.popular1:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 10px;
+  transform: scale(1.01);
+}
+
+.popularPicture {
+  width: 23.5rem;
+  height: 10rem;
+}
+
+.popularPicture img {
+  border-radius: 10px;
+  width: 23.5rem;
+  height: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px 10px;
+}
+
+.popularHP {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 370px;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.popularHP h3 {
+  color: #3b404b;
+}
+
+.popularHP p {
+  line-height: 1.5rem;
+  color: #43404b;
+}
+
+.popularViewMore {
+  display: flex;
+  justify-content: end;
+  padding-top: 1.5rem;
+  width: 370px;
+}
+
+.popularViewMore a {
+  color: #ff6612;
+  box-shadow: white 0px 0px 50px;
+  border-radius: 3px;
+}
+
+/******************************************************** fAQAndwhyTourToIndia *******************************************************/
+.fAQAndwhyTourToIndia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.fAQ {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+}
+
+.fAQ h2 {
+  color: #3b404b;
+}
+
+.fAQDIV {
+  margin-top: 2rem;
+}
+
+.q1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomBorder {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ff6612;
+}
+
+.question {
+  display: flex;
+  color: #3b404b;
+}
+
+.answer {
+  padding-left: 1.13rem;
+  color: #ff6612;
+}
+
+.answer {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: zoom-in;
+}
+
+.q1:hover .answer {
+  opacity: 1;
+}
+
+.q1 h4 {
+  color: #43404b;
+}
+
+.spanQ {
+  color: #ff6612;
+}
+
+.plusSign a {
+  color: #ff6612;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.plusSign:hover {
+  cursor: pointer;
+}
+
+.WrapperwhyTourToIndia {
+  width: 645px;
+}
+
+.whyTourToIndia {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 440px;
+  border: 2px solid #ff6612;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.whyTourToIndia ul li img {
+  height: 3.5rem;
+  margin-top: 1.5rem;
+}
+
+.whyTourToIndia ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ff6612;
+}
+
+.whyTourToIndia h2 {
+  color: #3b404b;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1.2rem;
+  border-bottom: 1px solid #ff6612;
+}
+
+.whyTourToIndia ul li h3 {
+  text-align: left;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #43404b;
+}
+
+.whyTourToIndia ul li p {
+  color: #43404b;
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+/******************************************************** About Beach Tourism In India *******************************************************/
+#aboutTourismInIndia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.aboutTourismInIndiaPicture {
+  width: 565px;
+}
+
+.aboutTourismInIndiaPicture img {
+  width: 30rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px 10px;
+  border-radius: 3px;
+}
+
+.aboutTourismInIndiaParagraph h2 {
+  color: #3b404b;
+}
+
+.aboutTourismInIndiaParagraph {
+  width: 755px;
+  margin-top: 7rem;
+  color: #43404b;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.5rem;
+}
+
+/******************************************************** Popular Links  *******************************************************/
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.headerAndLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headingAndSmallDescOfPopular {
+  display: flex;
+  flex-direction: column;
+}
+
+.headingAndSmallDescOfPopular h3 {
+  font-size: 2rem;
+  color: #38404f;
+}
+
+.headingAndSmallDescOfPopular p {
+  margin-top: 0.5rem;
+  color: #4b5260;
+}
+
+.linksOfPopularOne {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.linksOfPopularOne a {
+  border: solid 2px #ff6612;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.popularLinksDiv {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  gap: 1rem;
+}
+
+.linksOfPopularOne a:hover {
+  background-color: #ff6612;
+  color: white;
+}
+
+/******************************************************** End Section  *******************************************************/
+.WrapperEndSection {
+  display: flex;
+  justify-content: center;
+  background-color: #394048;
+}
+
+.endSection {
+  display: flex;
+  flex-direction: column;
+  color: #f8f8f9;
+  width: 1300px;
+}
+
+.firstHalf {
+  display: flex;
+  flex-direction: row;
+}
+
+.inMainSection h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.inMainSection ul {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.inMainSection li {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.inMainSection a {
+  color: #909499;
+}
+
+.legalPolicies {
+  margin-left: 10rem;
+  height: fit-content;
+}
+
+.legalPolicies h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.legalPolicies ul {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.legalPolicies li {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.legalPolicies a {
+  color: #909499;
+}
+
+.socialHandles {
+  margin-left: 30rem;
+  height: fit-content;
+}
+
+.socialHandles h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.socialHandles img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+.socialHandles img:hover {
+  background-color: #ff6612;
+  border-radius: 5px;
+}
+
+.socialHandles ul {
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialHandles li {
+  margin-right: 0.5rem;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  border-top: 1px solid #909499;
+  gap: 2rem;
+}
+
+.addressAndContactDetails {
+  margin-top: 2rem;
+  border-left: 1px solid #909499;
+}
+
+.addressAndContactDetails ul {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.addressAndContactDetails li {
+  margin-right: 1rem;
+  color: #909499;
+}
+
+.contact2ndUL {
+  margin-top: 2rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.copyright p {
+  padding-top: 1rem;
+}
+
+.get {
+  padding-left: 2px;
+  padding-top: 5px;
+}
+
+.websiteName {
+  color: pink;
+}
+
+.copy {
+  color: #909499;
+  font-size: small;
+}
+
+.disclaimer {
+  padding-bottom: 0.5rem;
+}
+
+.disclaimer p {
+  font-size: small;
+}

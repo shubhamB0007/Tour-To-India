@@ -1,0 +1,766 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/******************************************************************* Common For All **************************************************************************/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f4eee5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/******************************************************************* Nevigation Bar **************************************************************************/
+
+/* nav' is the Meganavbar Main All content holder from navigation bar */
+nav {
+  justify-content: baseline;
+  background-color: #f7e9d9;
+  border-bottom: 1px solid #918f9d;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #43424f;
+  display: block;
+  padding: 1.2em 1.5em;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav li:hover {
+  background-color: #f4eee5;
+}
+
+nav a:hover {
+  color: #ff6612;
+}
+
+/* menu-main' is the class which is given to the ul of nav items which are the main items of the Meganavbar */
+.menu-main {
+  padding: 0;
+}
+
+/* logoOfTheWebsite' is the first column from Meganavbar, which disply the Logo Of The Website  */
+.logoOfTheWebsite {
+  display: block;
+  padding-left: 1rem;
+  z-index: 999;
+}
+
+.logoOfTheWebsite img {
+  margin-bottom: -23px;
+  margin-top: -25px;
+  height: 3.5rem;
+  z-index: 999;
+  border-radius: 25px 5px;
+}
+
+/* following- nav li:hover .menu-sub' will display block of content under menu-sub which we hided before! */
+nav li:hover .menu-sub {
+  display: block;
+}
+
+/* menu-sub' is the div class which holds all data or classes of the main ul item in Meganavbar ex- holds all the data of Destinations */
+.menu-sub {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #918f9d;
+  border-bottom: 1px solid #918f9d;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #f4eee5;
+  display: none;
+  color: #918f9d;
+  padding-left: 11rem;
+}
+
+.menu-sub li {
+  display: block;
+}
+
+.menu-sub a {
+  padding: 0.3rem 0;
+  font-weight: normal;
+}
+
+/* menu-catagory' is the header under the class headerandUl  */
+
+.menu-catagory {
+  color: #4b5260;
+  margin: 2.5em 0 0.5em;
+}
+
+/* :first-of-type is the property where in div first div line is going to be selected*/
+.menu-catagory:first-of-type {
+  margin-top: 0;
+}
+
+/* menu-col-1' is the class that hold the class headerandUl */
+.menu-col-1 {
+  float: left;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+/* headerandUl' is the class whcih holds the header and li items of main item of Meganavbar ex- for Destinations class the headerand ul holds two classes by the name headerandul which are 'North india' and 'Top International' */
+.headerandUl {
+  margin: 2.5rem;
+}
+
+.headerandUl ul {
+  margin-top: 1rem;
+}
+
+.menu-col-1 img {
+  height: 25rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+/*******************************************************************  Home Page     **************************************************************************/
+#WrapperFullPage {
+  display: flex;
+  justify-content: center;
+}
+
+.fullPage {
+  width: 1320px;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.backToTop a {
+  display: block;
+  font-size: 2rem;
+  color: #ff6612;
+}
+
+.backToTop a:hover {
+  transform: scale(2);
+}
+
+#homePageslide {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+
+.autoBlinkImages {
+  margin: 4rem 0 1rem 1rem;
+  height: 40rem;
+  width: 26.5rem;
+}
+
+.autoBlinkImages img {
+  z-index: -1;
+  justify-self: left;
+  height: 40rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px 10px;
+  border-radius: 3px;
+}
+
+.homePageTourCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.websiteIntro p {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  color: #38404f;
+}
+
+.websiteIntro h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  color: #38404f;
+}
+
+.smallDescIntro {
+  margin-top: 2rem;
+}
+
+.smallDescIntro p {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.india-holidy-span {
+  font-weight: 900;
+  color: #ff6612;
+}
+
+.sopts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.sopts h2 a {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  color: #3e3f54;
+}
+
+.sopts p {
+  margin-top: 1px;
+  padding-left: 1rem;
+  color: #918f9d;
+}
+
+.spot1,
+.spot2,
+.spot3 {
+  margin: 0 1rem 0 1rem;
+  padding: 1rem 1.5rem 1.5rem 0;
+  background-color: #f4eee5;
+}
+
+.spot1 img,
+.spot2 img,
+.spot3 img {
+  margin-top: 1rem;
+  height: 11rem;
+  border-radius: 5px;
+  margin-left: -20px;
+}
+
+.spot1:hover,
+.spot2:hover,
+.spot3:hover {
+  box-shadow: #ff6612 0px 5px 10px;
+  z-index: 999;
+  transform: scale(1.05);
+}
+
+.spot1:hover h2 a,
+.spot2:hover h2 a,
+.spot3:hover h2 a {
+  transition: 0.5s ease-in-out;
+  color: orangered;
+  font-weight: bold;
+}
+
+/******************************************************************* Second Page **************************************************************************/
+/******************************************************************* Top India Holiday Spots **************************************************************************/
+.Top-Indian-International-trending-Packages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.secondPage1DivLine {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.secondPage1DivHeading h2 {
+  font-weight: bolder;
+  text-align: left;
+  color: #38404f;
+}
+
+.secondPage1DivSpots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.3rem;
+  gap: 1rem;
+}
+
+.secondPage1DivSpots > * {
+  width: 15.7rem;
+  height: 15rem;
+}
+
+.topIHDspot1,
+.topIHDspot2,
+.topIHDspot3,
+.topIHDspot4,
+.topIHDspot5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 3px;
+  /* box-shadow: #f4eee5 0px 10px 50px; */
+}
+
+.topIHDspot1:hover,
+.topIHDspot2:hover,
+.topIHDspot3:hover,
+.topIHDspot4:hover,
+.topIHDspot5:hover {
+  box-shadow: #ff6612 0px 5px 10px;
+  z-index: 999;
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+.topIHDspot1 img,
+.topIHDspot2 img,
+.topIHDspot3 img,
+.topIHDspot4 img,
+.topIHDspot5 img {
+  margin-top: 0.5rem;
+  width: 15.5rem;
+  height: 11rem;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.secondPage1DivSpots h3 a {
+  margin-top: 0.2rem;
+  padding-left: 10px;
+  color: #3e3f54;
+}
+
+.secondPage1DivSpots p {
+  padding-left: 10px;
+  color: #918f9d;
+}
+
+.topIHDspot1 img:hover,
+.topIHDspot2 img:hover,
+.topIHDspot3 img:hover,
+.topIHDspot4 img:hover,
+.topIHDspot5 img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.topIHDspot1 a:hover + .topIHDspot1HP {
+  margin-top: 0.3rem;
+}
+
+.topIHDspot2 a:hover + .topIHDspot1HP {
+  margin-top: 0.3rem;
+}
+
+.topIHDspot3 a:hover + .topIHDspot1HP {
+  margin-top: 0.3rem;
+}
+
+.topIHDspot4 a:hover + .topIHDspot1HP {
+  margin-top: 0.3rem;
+}
+
+.topIHDspot5 a:hover + .topIHDspot1HP {
+  margin-top: 0.3rem;
+}
+
+.topIHDspot1HP {
+  text-align: left;
+  width: 100%;
+}
+
+/******************************************************************* Top International Holiday Spots **************************************************************************/
+.exploreNow {
+  overflow: hidden;
+  width: 82.5rem;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.exploreNow img {
+  width: 82.5rem;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+}
+
+/******************************************************************* About india **************************************************************************/
+.aboutIndiaShriRam {
+  /* overflow: hidden; */
+  height: 45rem;
+  width: 30rem;
+}
+
+.aboutIndiaShriRam img {
+  height: 45rem;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px 10px;
+}
+
+.aboutIndia {
+  display: flex;
+  float: right;
+  margin: 2rem 0;
+  margin-bottom: 2rem;
+  gap: 6rem;
+}
+
+.overViewParagraph {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.overViewParagraphHeaders h4 {
+  color: orangered;
+  font-size: 1.3rem;
+}
+
+.overViewParagraphHeaders h3 {
+  color: #4c5360;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
+.twoParas {
+  display: flex;
+  flex-direction: row;
+}
+
+.twoParas p {
+  color: #4b5260;
+  line-height: 1.7em;
+  padding-top: 25px;
+  text-align: left;
+}
+
+.rightPara {
+  margin-left: 2rem;
+}
+
+.quiclLinksDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #ff6612;
+  color: white;
+  margin: 0.5rem;
+}
+
+.quiclLinksDiv h4 {
+  margin: 4rem 0 0 2rem;
+}
+
+.quiclLinksDiv ul {
+  margin-left: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 0.6rem;
+}
+
+.quiclLinksDiv li {
+  list-style-type: disc;
+  margin-top: 0.3rem;
+}
+
+.quiclLinksDiv li:hover {
+  padding-left: 1rem;
+}
+
+.quiclLinksDiv a {
+  color: white;
+}
+
+/******************************************************************* Why Choose Us **************************************************************************/
+.whyChooseUs {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 4rem 0;
+  width: 1320px;
+}
+
+.headerWCUs h3 {
+  font-size: 2rem;
+  color: #38404f;
+}
+
+.headerWCUs p {
+  margin-top: 0.5em;
+}
+
+.qualities {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.quality1 {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.headerAndPara {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.imageOfQuality img {
+  height: 3rem;
+}
+
+.imageOfQuality3 img {
+  height: 2.9rem;
+}
+
+.headerOfQuality h4 {
+  font-size: 1.5rem;
+  color: #41404f;
+}
+
+.paragraphOfQuality p {
+  margin-top: 0.7rem;
+  line-height: 1.5em;
+  color: #4b5260;
+}
+
+/******************************************************** Popular Links  *******************************************************/
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.headerAndLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headingAndSmallDescOfPopular {
+  display: flex;
+  flex-direction: column;
+}
+
+.headingAndSmallDescOfPopular h3 {
+  font-size: 2rem;
+  color: #38404f;
+}
+
+.headingAndSmallDescOfPopular p {
+  margin-top: 0.5rem;
+  color: #4b5260;
+}
+
+.linksOfPopularOne {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.linksOfPopularOne a {
+  border: solid 2px #ff6612;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.popularLinksDiv {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  gap: 1rem;
+}
+
+.linksOfPopularOne a:hover {
+  background-color: #ff6612;
+  color: white;
+}
+
+/******************************************************** End Section  *******************************************************/
+.WrapperEndSection {
+  display: flex;
+  justify-content: center;
+  background-color: #394048;
+}
+
+.endSection {
+  display: flex;
+  flex-direction: column;
+  color: #f8f8f9;
+  width: 1300px;
+}
+
+.firstHalf {
+  display: flex;
+  flex-direction: row;
+}
+
+.inMainSection h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.inMainSection ul {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.inMainSection li {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.inMainSection a {
+  color: #909499;
+}
+
+.legalPolicies {
+  margin-left: 10rem;
+  height: fit-content;
+}
+
+.legalPolicies h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.legalPolicies ul {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.legalPolicies li {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.legalPolicies a {
+  color: #909499;
+}
+
+.socialHandles {
+  margin-left: 30rem;
+  height: fit-content;
+}
+
+.socialHandles h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.socialHandles img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.socialHandles img:hover {
+  background-color: #ff6612;
+  border-radius: 5px;
+}
+
+.socialHandles ul {
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialHandles li {
+  margin-right: 0.5rem;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  border-top: 1px solid #909499;
+  gap: 2rem;
+}
+
+.addressAndContactDetails {
+  margin-top: 2rem;
+  border-left: 1px solid #909499;
+}
+
+.addressAndContactDetails ul {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.addressAndContactDetails li {
+  margin-right: 1rem;
+  color: #909499;
+}
+
+.contact2ndUL {
+  margin-top: 2rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.copyright p {
+  padding-top: 1rem;
+}
+
+.get {
+  padding-left: 2px;
+  padding-top: 5px;
+}
+
+.websiteName {
+  color: pink;
+}
+
+.copy {
+  color: #909499;
+  font-size: small;
+}
+
+.disclaimer {
+  padding-bottom: 0.5rem;
+}
+
+.disclaimer p {
+  font-size: small;
+}

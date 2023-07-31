@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/******************************************************************* Common For All **************************************************************************/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: white;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.horizontal-line {
+    border: none;
+    border-top: 1px solid #ff6612;
+    height: 1px;
+    width: 45px;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+/******************************************************************* The Main Page (Only Page) **************************************************************************/
+.WrapperMainContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.mainContainer {
+    background-color: #F4EEE5;
+    margin-top: 3rem;
+    width: 900px;
+    height: 700px;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: #494f5d 0px 5px 35px;
+}
+
+.mainContainer h1 {
+    color: orangered;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.coDiv {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    /* border: 3px solid red; */
+    border-radius: 10px;
+}
+
+.leftDiv h3 {
+    font-size: 2.5rem;
+    color: #494f5d;
+    margin: 1rem;
+    margin-left: 2.5rem;
+}
+
+.leftDiv ul {
+    margin: 1rem 0 0 3rem;
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 340px;
+}
+
+.leftDiv li {
+    color: orangered;
+    font-size: 1.2rem;
+}
+
+.leftDiv li p {
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: default;
+    color: #70747d;
+}
+
+.socialHandels {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.socialHandels img {
+    width: 3.5rem;
+    border: 1px solid orangered;
+    border-radius: 50%;
+}
+
+.socialHandels img:hover {
+    border: none;
+    background-color: orangered;
+    border-radius: none;
+}
+
+.contact {
+    width: 250px;
+    margin: 2.5rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid gray;
+    gap: 0.5rem;
+}
+
+.contact h4 {
+    text-align: center;
+}
+
+.contact p {
+    font-weight: bold;
+    color: orangered;
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+
+.leftDiv {
+    width: 400px;
+    height: 650px;
+    border-radius: 10px;
+}
+
+.rightDiv h3 {
+    font-size: 2.5rem;
+    color: #494f5d;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2.5rem;
+}
+
+.OrrangeSpan {
+    color: orangered;
+}
+
+
+.rightDiv form {
+    color: #70747d;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+}
+
+.rightDiv label {
+    display: block;
+    margin-top: 10px;
+}
+
+.rightDiv input[type="text"],
+.rightDiv input[type="email"],
+.rightDiv textarea,
+.rightDiv input[type="date"],
+.rightDiv input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.rightDiv input[type="submit"] {
+    background-color: #F4EEE5;
+    border: 1px solid orangered;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rightDiv input[type="submit"]:hover {
+    color: white;
+    background-color: orangered;
+}

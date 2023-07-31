@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./TourismImages\LogoAndIcon\bird_2.jpg" />
+    <title>TourToIndia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Roboto&family=Shantell+Sans:ital,wght@0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS\letUsPlanYourTrip.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1170px)"
+      href="CSS\Phone-Compatible-CSS\Index-Page-Phone.css"
+    />
+  </head>
+
+  <body>
+    <!-- WrapperMainContainer' is the created wrapper class that holds all content of the page -->
+    <div class="WrapperMainContainer">
+
+      <!-- mainContainer' is the class that holds all the content and created for Giving hight and width for webpage -->
+      <div class="mainContainer">
+
+        <!-- coDiv' is the class that holds the rightDiv' and leftDiv' classes -->
+        <div class="coDiv">
+
+          <!-- The leftDiv' class holds the information about how the following form will connect traveller to host -->
+          <div class="leftDiv">
+            <h3>How It Works</h3>
+            <ul>
+              <li>
+                <p>Tell us details of your holiday plan.</p>
+              </li>
+              <li>
+                <p>
+                  After you submit the form, one of our travel experts will get
+                  back to you with customised holiday package based on your
+                  requirement, within 24 hours.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Grab the deal and start packing your bags for an indelible
+                  holiday with Tour My India.
+                </p>
+              </li>
+            </ul>
+
+            <!-- The socialHandelsAndContact' class contain the social profiles and contact scction for direct contact with host -->
+            <div class="socialHandelsAndContact">
+              <div class="socialHandels">
+                <a href="404PageNotFound.html"
+                  ><img
+                    src="TourismImages\SocialMedia\Facebook.png"
+                    alt="Facebook"
+                /></a>
+                <a href="404PageNotFound.html"
+                  ><img
+                    src="TourismImages\SocialMedia\Twitter.png"
+                    alt="Twitter"
+                /></a>
+                <a href="404PageNotFound.html">
+                  <img
+                    src="TourismImages\SocialMedia\Instagram.png"
+                    alt="Instagram"
+                /></a>
+              </div>
+              <div class="contact">
+                <h4>📞Call Us For Details</h4>
+                <p>+91-7745017936</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- The rightDiv' class holds the form that connect the traveller and the host to make a Tour Plan -->
+          <div class="rightDiv">
+            <h3>Request a <span class="OrrangeSpan">QUOTE</span></h3>
+            <hr class="horizontal-line" />
+
+            <form>
+              <label for="fullname">Full Name:</label>
+              <input type="text" id="fullname" name="fullname" /><br />
+
+              <label for="country">Country:</label>
+              <input type="text" id="country" name="country" /><br />
+
+              <label for="email">Email ID:</label>
+              <input type="email" id="email" name="email" /><br />
+
+              <label for="tourdescription">Tour Description:</label>
+              <textarea id="tourdescription" name="tourdescription"></textarea
+              ><br />
+
+              <label for="traveldate">Travel Date:</label>
+              <input type="date" id="traveldate" name="traveldate" /><br />
+
+              <label for="duration">Duration of Stay:</label>
+              <input type="text" id="duration" name="duration" /><br />
+
+              <label for="personcount">No. of Persons:</label>
+              <input type="number" id="personcount" name="personcount" /><br />
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

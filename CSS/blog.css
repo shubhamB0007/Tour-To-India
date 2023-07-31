@@ -1,0 +1,665 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/******************************************************************* Common For All **************************************************************************/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f4eee5;
+  /* background-color: #6887; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 1px solid #ff6612;
+  /* Replace #000000 with the desired color */
+  height: 1px;
+  width: 3%;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  /* Center align the horizontal line */
+}
+
+/******************************************************************* Nevigation Bar **************************************************************************/
+nav {
+  justify-content: baseline;
+  background-color: #f7e9d9;
+  border-bottom: 1px solid #918f9d;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #43424f;
+  display: block;
+  padding: 1.2em 1.5em;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+nav li:hover {
+  background-color: #f4eee5;
+}
+
+nav a:hover {
+  color: #ff6612;
+}
+
+.logoOfTheWebsite {
+  display: block;
+  padding-left: 1rem;
+  z-index: 999;
+}
+
+.logoOfTheWebsite img {
+  margin-bottom: -23px;
+  margin-top: -25px;
+  height: 3.5rem;
+  z-index: 999;
+  border-radius: 25px 5px;
+}
+
+.menu-main {
+  padding: 0;
+}
+
+.menu-sub > * {
+  display: flex;
+}
+
+.menu-sub {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #918f9d;
+  border-bottom: 1px solid #918f9d;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #f4eee5;
+  display: none;
+  color: #918f9d;
+  padding-left: 11rem;
+}
+
+.menu-catagory {
+  color: #4b5260;
+}
+
+nav li:hover .menu-sub {
+  display: block;
+}
+
+.menu-sub li {
+  display: block;
+}
+
+.menu-sub a {
+  padding: 0.3rem 0;
+  font-weight: normal;
+}
+
+.menu-catagory {
+  margin: 2.5em 0 0.5em;
+}
+
+/* :first-of-type is the property where in div firt div line is goin to be selected*/
+.menu-catagory:first-of-type {
+  margin-top: 0;
+}
+
+.menu-col-1 {
+  float: left;
+}
+
+.menu-col-1 {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerandUl {
+  margin: 2.5rem;
+}
+
+.headerandUl ul {
+  margin-top: 1rem;
+}
+
+.menu-col-1 img {
+  height: 25rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.planYourTrip {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  /* Adjust the distance from the bottom as needed */
+  right: 20px;
+  /* Adjust the distance from the right as needed */
+  z-index: 999;
+  /* Ensure the button appears on top of other content */
+}
+
+.planYourTrip a {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #ff6612;
+  /* color: whitesmoke; */
+  border-radius: 25px;
+  border: 1px solid black;
+  /* Ensure the link takes up the entire space of the button */
+  padding: 15px 35px;
+  /* Add padding to the link for better clickability */
+  color: white;
+  /* Set the text color of the button */
+}
+
+.planYourTrip a:hover {
+  font-size: 1rem;
+}
+
+#WrapperFullPage {
+  display: flex;
+  justify-content: center;
+}
+
+.fullPage {
+  width: 1300px;
+}
+
+.backToNavBar {
+  margin-top: 1rem;
+  width: 1320px;
+}
+
+.backToNavBar ul {
+  font-size: small;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.spanOrange {
+  color: #ff6612;
+  font-weight: bolder;
+}
+
+/******************************************************************* Header And Two Paras About G P B **************************************************************************/
+
+.headerAndTwoParasAboutGPB {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerAndTwoParasAboutGPB h1 {
+  font-weight: 100;
+  color: #394048;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.spanOrange2 {
+  color: #ff6612;
+  font-weight: bold;
+}
+
+.twoParas {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.twoParas p {
+  color: #3b404b;
+  line-height: 1.8rem;
+  font-size: large;
+}
+
+/******************************************************************* Accommodations-Around- **************************************************************************/
+
+.accommodations-Around- {
+  border-top: 1px solid pink;
+}
+
+.accommodations-Around- {
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.accommodations-Around- h2 {
+  color: #394048;
+  text-align: center;
+}
+
+.accommodations-Around- p {
+  color: #3b404b;
+  padding: 2rem 0 2rem 0;
+}
+
+/******************************************************************* Some Of This Header And List **************************************************************************/
+
+.someofthisHeaderAndList ul li::marker {
+  color: #ff6612;
+}
+
+.someofthisHeaderAndList ul {
+  margin-left: 1.5rem;
+}
+
+.someofthisList {
+  color: #3b404b;
+  list-style-type: disc;
+  margin-top: 2.5rem;
+  columns: 3;
+  line-height: 1rem;
+}
+
+.someofthisList li {
+  line-height: 2rem;
+}
+
+.someofthisHeaderAndList h2 {
+  color: #394048;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/******************************************************************* Things To Do IN **************************************************************************/
+
+.thingsToDoIN {
+  border-top: 1px solid pink;
+}
+
+.thingsToDoIN {
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.thingsToDoIN h2 {
+  color: #394048;
+  text-align: center;
+}
+
+.thingsToDoIN p {
+  color: #3b404b;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.thingsDiv {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.thingsDiv > * {
+  width: 400px;
+}
+
+.thing1 h3 {
+  color: #394048;
+  padding: 1.5rem 0 1rem 0;
+}
+
+.thing1 p {
+  color: #3b404b;
+  margin-top: 0;
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+.thingPic {
+  width: 23.7rem;
+  height: 13rem;
+}
+
+.thing1 img {
+  width: 23.7rem;
+  height: 13rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px 10px;
+  border-radius: 3px;
+}
+
+/******************************************************************* Best Time To Visit **************************************************************************/
+
+.bestTimeToVisit {
+  border-top: 1px solid pink;
+}
+
+.bestTimeToVisit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+}
+
+.bestTimeToVisit h2 {
+  color: #394048;
+  text-align: center;
+}
+
+.bestTimeToVisit p {
+  margin-top: 1rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+/******************************************************************* How To Reach **************************************************************************/
+
+.howToReach {
+  border-top: 1px solid pink;
+}
+
+.howToReach {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+.howToReach h2 {
+  color: #394048;
+  text-align: center;
+}
+
+.byDiv {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.byDiv > * {
+  width: 400px;
+}
+
+.by {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.byPic {
+  width: 10rem;
+  height: 10rem;
+}
+
+.by img {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid #ff6612;
+  padding: 40px;
+  border-radius: 50%;
+}
+
+.by h4 {
+  color: #394048;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.by p {
+  padding-top: 0.5rem;
+  color: #3b404b;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+/******************************************************** Popular Links  *******************************************************/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.popular {
+  border-top: 1px solid pink;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+}
+
+.headerAndLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headingAndSmallDescOfPopular {
+  display: flex;
+  flex-direction: column;
+}
+
+.headingAndSmallDescOfPopular h3 {
+  font-size: 2rem;
+  color: #38404f;
+  text-align: center;
+}
+
+.headingAndSmallDescOfPopular p {
+  margin-top: 0.5rem;
+  color: #4b5260;
+}
+
+.linksOfPopularOne {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.linksOfPopularOne a {
+  color: #3b404b;
+  border: solid 2px #ff6612;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.popularLinksDiv {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.linksOfPopularOne a:hover {
+  background-color: #ff6612;
+  color: white;
+}
+
+/******************************************************** End Section  *******************************************************/
+.WrapperEndSection {
+  display: flex;
+  justify-content: center;
+  background-color: #394048;
+}
+
+.endSection {
+  display: flex;
+  flex-direction: column;
+  color: #f8f8f9;
+  width: 1300px;
+}
+
+.firstHalf {
+  display: flex;
+  flex-direction: row;
+}
+
+.inMainSection h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.inMainSection ul {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.inMainSection li {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.inMainSection a {
+  color: #909499;
+}
+
+.legalPolicies {
+  margin-left: 10rem;
+  height: fit-content;
+}
+
+.legalPolicies h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.legalPolicies ul {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.legalPolicies li {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.legalPolicies a {
+  color: #909499;
+}
+
+.socialHandles {
+  margin-left: 30rem;
+  height: fit-content;
+}
+
+.socialHandles h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.socialHandles img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+.socialHandles img:hover {
+  background-color: #ff6612;
+  border-radius: 5px;
+}
+
+.socialHandles ul {
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialHandles li {
+  margin-right: 0.5rem;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  border-top: 1px solid #909499;
+  gap: 2rem;
+}
+
+.addressAndContactDetails {
+  margin-top: 2rem;
+  border-left: 1px solid #909499;
+}
+
+.addressAndContactDetails ul {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.addressAndContactDetails li {
+  margin-right: 1rem;
+  color: #909499;
+}
+
+.contact2ndUL {
+  margin-top: 2rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.copyright p {
+  padding-top: 1rem;
+}
+
+.get {
+  padding-left: 2px;
+  padding-top: 5px;
+}
+
+.websiteName {
+  color: pink;
+}
+
+.copy {
+  color: #909499;
+  font-size: small;
+}
+
+.disclaimer {
+  padding-bottom: 0.5rem;
+}
+
+.disclaimer p {
+  font-size: small;
+}

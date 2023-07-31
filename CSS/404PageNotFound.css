@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/******************************************************************* Common For All **************************************************************************/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f4eee5;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.backToHome {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.backToHome a {
+  border: solid 2px #ff6612;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+.backToHome a:hover {
+  background-color: #ff6612;
+  color: white;
+}
+
+.createdBy {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.createdBy a {
+  color: #ff6612;
+}

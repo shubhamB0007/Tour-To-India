@@ -1,0 +1,520 @@
+/******************************************************************* Nevigation Bar **************************************************************************/
+/******************************************************************* Nevigation Bar **************************************************************************/
+nav {
+  display: none;
+  justify-content: baseline;
+  background-color: #f7e9d9;
+  border-bottom: 1px solid #918f9d;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #43424f;
+  display: block;
+  padding: 1em 1.75em;
+  font-weight: bold;
+}
+
+nav li:hover {
+  background-color: #f4eee5;
+}
+
+nav a:hover {
+  color: #ff6612;
+}
+
+.logoOfTheWebsite {
+  display: block;
+  padding-left: 0;
+  z-index: 999;
+}
+
+.logoOfTheWebsite img {
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 3.5rem;
+  z-index: 999;
+}
+
+.menu-main {
+  padding: 0;
+}
+
+.menu-sub > * {
+  display: flex;
+}
+
+.menu-sub {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #918f9d;
+  border-bottom: 1px solid #918f9d;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #f4eee5;
+  display: none;
+  color: #918f9d;
+  padding-left: 11rem;
+}
+
+.menu-catagory {
+  color: #4b5260;
+}
+
+nav li:hover .menu-sub {
+  display: block;
+}
+
+.menu-sub li {
+  display: block;
+}
+
+.menu-sub a {
+  padding: 0.3rem 0;
+  font-weight: normal;
+}
+
+.menu-catagory {
+  margin: 2.5em 0 0.5em;
+}
+
+/* :first-of-type is the property where in div firt div line is goin to be selected*/
+.menu-catagory:first-of-type {
+  margin-top: 0;
+}
+
+.menu-col-1 {
+  float: left;
+}
+
+.menu-col-1 {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerandUl {
+  margin: 2.5rem;
+}
+
+.headerandUl ul {
+  margin-top: 1rem;
+}
+
+.menu-col-1 img {
+  height: 25rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.backToNavBar {
+  width: auto;
+  padding: 10px;
+}
+
+.planYourTrip a {
+  font-size: 0.8rem;
+  padding: 10px 0px;
+}
+
+.planYourTrip a:hover {
+  font-size: 0.8rem;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  /* Adjust the distance from the bottom as needed */
+  right: 20px;
+  /* Adjust the distance from the right as needed */
+  z-index: 999;
+  /* Ensure the button appears on top of other content */
+}
+
+.backToTop a {
+  display: block;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.backToTop a:hover {
+  transform: none;
+}
+
+/*******************************************************************  Home Page 1st  **************************************************************************/
+#WrapperFullPage {
+  padding: 0 20px;
+}
+
+.fullPage {
+  width: auto;
+}
+
+#homePageslide {
+  flex-direction: column;
+  gap: 0;
+}
+
+.autoBlinkImages {
+  justify-self: center;
+  width: 100vw;
+  height: 170vw;
+  margin: 2em;
+  border-radius: 0;
+}
+
+.autoBlinkImages img {
+  justify-self: center;
+  width: 100vw;
+  height: 170vw;
+  margin: 0;
+  border-radius: 0;
+}
+
+.homePageTourCards {
+  align-items: center;
+}
+
+.websiteIntro {
+  padding: 0 20px;
+  width: 100vw;
+}
+
+.websiteIntro p {
+  font-size: clamp(16px, 2vw, 40px);
+}
+
+.websiteIntro h1 {
+  font-size: clamp(16px, 7vw, 50px);
+}
+
+.smallDescIntro {
+  margin-top: 1rem;
+}
+
+.smallDescIntro p {
+  margin-left: 0;
+}
+
+.sopts {
+  flex-direction: column;
+  align-items: center;
+}
+
+.sopts h2 {
+  font-size: clamp(16px, 6vw, 40px);
+}
+
+.spot1,
+.spot2,
+.spot3 {
+  width: 90vw;
+  padding: 0;
+  align-items: center;
+  /* border-radius: 0 120px; */
+}
+
+.spot1 img,
+.spot2 img,
+.spot3 img {
+  width: 88vw;
+  height: auto;
+  padding: 10px 5px 10px 15px;
+}
+
+.spot1 img:hover,
+.spot2 img:hover,
+.spot3 img:hover {
+  height: auto;
+}
+
+.spot1:hover,
+.spot2:hover,
+.spot3:hover,
+.spot {
+  z-index: 999;
+  transform: none;
+}
+
+/******************************************************************* Second Page **************************************************************************/
+/******************************************************************* Top India Holiday Spots **************************************************************************/
+.secondPage1DivLine {
+  margin-top: 3rem;
+}
+
+.secondPage1DivHeading h2 {
+  text-align: center;
+  font-size: clamp(16px, 5vw, 50px);
+}
+
+.secondPage1DivSpots {
+  flex-direction: column;
+}
+
+.secondPage1DivSpots > * {
+  width: 90vw;
+  height: auto;
+  padding: 0 0 10px 0;
+  margin-top: 0.5rem;
+  border-radius: 0 45px;
+}
+
+.topIHDspot1 img,
+.topIHDspot2 img,
+.topIHDspot3 img,
+.topIHDspot4 img,
+.topIHDspot5 img {
+  width: 85vw;
+  height: auto;
+  padding: 0;
+  border-radius: 0 45px;
+}
+
+.secondPage1DivSpots h3 {
+  padding-left: 0;
+  font-size: clamp(16px, 4vw, 50px);
+}
+
+.secondPage1DivSpots p {
+  padding-left: 0;
+  font-size: clamp(16px, 2vw, 50px);
+}
+
+.topIHDspot1 img:hover,
+.topIHDspot2 img:hover,
+.topIHDspot3 img:hover,
+.topIHDspot4 img:hover,
+.topIHDspot5 img:hover {
+  transition: none;
+  transform: none;
+}
+
+.topIHDspot1:hover,
+.topIHDspot2:hover,
+.topIHDspot3:hover,
+.topIHDspot4:hover,
+.topIHDspot5:hover {
+  transform: none;
+  z-index: 0;
+}
+
+.topIHDspot1 a:hover + .topIHDspot1HP {
+  margin-top: 0;
+}
+
+.topIHDspot2 a:hover + .topIHDspot1HP {
+  margin-top: 0;
+}
+
+.topIHDspot3 a:hover + .topIHDspot1HP {
+  margin-top: 0;
+}
+
+.topIHDspot4 a:hover + .topIHDspot1HP {
+  margin-top: 0;
+}
+
+.topIHDspot5 a:hover + .topIHDspot1HP {
+  margin-top: 0;
+}
+
+.topIHDspot1HP {
+  text-align: center;
+}
+
+.exploreNow img {
+  width: 90vw;
+  height: 35vw;
+}
+
+/******************************************************************* About india **************************************************************************/
+.aboutIndiaShriRam img {
+  display: none;
+}
+
+.aboutIndia {
+  float: none;
+  gap: 0;
+}
+
+.overViewParagraph {
+  margin-top: 0;
+}
+
+.overViewParagraphHeaders h3 {
+  margin-top: 1rem;
+  font-size: clamp(16px, 6vw, 40px);
+}
+
+.twoParas {
+  flex-direction: column;
+}
+
+.twoParas p {
+  padding-top: 10px;
+  font-size: clamp(16px, 2vw, 40px);
+}
+
+.rightPara {
+  margin-left: auto;
+}
+
+.quiclLinksDiv {
+  margin: auto;
+}
+
+/******************************************************************* Why Choose Us **************************************************************************/
+.whyChooseUs {
+  margin: 1rem 0;
+  width: auto;
+}
+
+.headerWCUs h3 {
+  font-size: clamp(16px, 5vw, 30px);
+}
+
+.headerWCUs p {
+  margin-top: 0.5em;
+  font-size: 0.9rem;
+}
+
+.qualities {
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.quality1 {
+  margin-top: 0.5rem;
+}
+
+.imageOfQuality img {
+  height: 2rem;
+}
+
+.imageOfQuality3 img {
+  height: 2.8rem;
+  max-height: 2.8rem;
+}
+
+.headerOfQuality h4 {
+  font-size: 1rem;
+}
+
+.paragraphOfQuality p {
+  font-size: clamp(16px, 2vw, 40px);
+}
+
+/******************************************************** Popular Links  *******************************************************/
+.popularLinksDiv {
+  margin-top: 0;
+  flex-direction: column;
+  width: auto;
+}
+
+.headingAndSmallDescOfPopular {
+  text-align: center;
+}
+
+/******************************************************************* EndSection **************************************************************************/
+.endSection {
+  width: 100vw;
+  padding: 0 20px;
+}
+
+.firstHalf {
+  flex-direction: column;
+}
+
+.inMainSection ul {
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
+.legalPolicies {
+  margin-left: 0;
+  height: auto;
+}
+
+.legalPolicies h3 {
+  margin-top: 1rem;
+}
+
+.legalPolicies ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.socialHandles {
+  margin-left: 0;
+  height: auto;
+}
+
+.socialHandles h3 {
+  margin-top: 1rem;
+}
+
+.socialHandles img {
+  height: 6vw;
+  max-height: 6vh;
+}
+
+.socialHandles img:hover {
+  border-radius: none;
+}
+
+.socialHandles li {
+  margin-right: 0;
+}
+
+.contactUs {
+  flex-direction: column-reverse;
+  margin-bottom: 1rem;
+  border-top: none;
+  width: 94vw;
+}
+
+.addressAndContactDetails {
+  margin-top: 1rem;
+  border-left: none;
+  font-size: 0.9rem;
+}
+
+.addressAndContactDetails ul {
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.addressAndContactDetails li {
+  margin-right: 0;
+}
+
+.contact1stUL {
+  gap: 0.5rem;
+}
+
+.contact2ndUL {
+  margin-top: auto;
+  gap: 0.5rem;
+}
+
+.copyright {
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.get {
+  padding-left: auto;
+  padding-top: auto;
+}

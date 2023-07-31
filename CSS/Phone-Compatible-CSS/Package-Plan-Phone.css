@@ -1,0 +1,372 @@
+/******************************************************************* Nevigation Bar **************************************************************************/
+
+.navbar {
+    width: 100vw;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.nav-item a {
+    padding: 0;
+}
+
+
+.backToNavBar {
+    width: auto;
+    padding: 10px;
+}
+
+.planYourTrip a {
+    font-size: 0.8rem;
+    padding: 10px 0px;
+}
+
+.planYourTrip a:hover {
+    font-size: 0.8rem;
+}
+
+/******************************************************************* pictureAndPlan **************************************************************************/
+
+#fullPage {
+    width: auto;
+}
+
+.pictureAndPlan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.pictureOfTourDestination {
+    width: auto;
+    height: auto;
+}
+
+.pictureOfTourDestination img {
+    width: 95vw;
+    height: auto;
+    box-shadow: none;
+}
+
+.planInfo {
+    width: 95vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.planInfo h1 {
+    font-size: 3vh;
+    font-size: clamp(16px, 3vh, 25px);
+    padding-bottom: 10px;
+    width: auto;
+    text-align: center;
+}
+
+.spanOrange2 p {
+    padding-bottom: 10px;
+}
+
+.planInfo h2 {
+    width: 98vw;
+    font-size: 2.5vh;
+    font-size: clamp(16px, 2.5vh, 25px);
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.planInfo ul {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5vw;
+
+}
+
+.planInfo ul li img {
+    height: 6vh;
+    width: auto;
+    padding-bottom: 5px;
+    margin: auto;
+}
+
+.planInfo ul li p {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/******************************************************************* shortInfoPlanEnquiryFormAndWhyXYZ **************************************************************************/
+.shortInfoPlanEnquiryFormAndWhyXYZ {
+    width: auto;
+    flex-direction: column;
+}
+
+.leftDiv {
+    width: auto;
+}
+
+.WrapperShortInfo {
+    margin: 3.5rem 10px 0 10px;
+}
+
+.shortInfo {
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.shortInfo p {
+    font-size: 0.9rem;
+}
+
+.Wrapperplan {
+    margin: 4rem 10px 0 10px;
+}
+
+.planDiv {
+    margin-top: 0;
+    padding-top: 2rem;
+    width: 95vw;
+    padding: 1rem 10px 0 10px;
+}
+
+.planDiv h3 {
+    font-size: 6vw;
+    font-size: clamp(16px, 6vw, 35px);
+}
+
+.dayAndDayPlan {
+    gap: 0;
+}
+
+.planDescription ul {
+    text-align: center;
+    gap: 1vw;
+}
+
+.planDescription ul li p {
+    font-size: 0.9rem;
+}
+
+.item li {
+    padding: 2.5px;
+    font-size: 2.5vw;
+    /* font-size: clamp(16px, 1vh, 15px); */
+}
+
+.planDescription p {
+    font-size: 0.9rem;
+}
+
+.planDescription ul li img {
+    height: 4.5vh;
+}
+
+.rightDiv {
+    display: flex;
+    flex-direction: column-reverse;
+    float: none;
+    width: 0;
+    margin: 1.5rem 10px 0 10px;
+}
+
+.enquiryForm {
+    float: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 95vw;
+    height: 650px;
+    margin-top: 2rem;
+}
+
+.enquiryForm h2 {
+    font-size: 6vw;
+    font-size: clamp(16px, 6vw, 30px);
+}
+
+/******************************************************************* WhyXYZ **************************************************************************/
+.WrapperwhyXYZ {
+    margin: 3rem auto;
+    width: auto;
+    float: none;
+}
+
+.whyXYZ {
+    float: none;
+    width: 95vw;
+    margin: auto;
+}
+
+.whyXYZ h2 {
+    font-size: 6vw;
+    font-size: clamp(16px, 6vw, 30px);
+}
+
+.col {
+    width: auto;
+}
+
+/******************************************************************* Related Tour Packages **************************************************************************/
+.bestSellingTourPackages {
+    width: auto;
+    padding: 0 10px 0 10px;
+}
+
+.PackagesTourDiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bestSellingPackagesDivHeading h2 {
+    text-align: center;
+    font-size: 6vw;
+    font-size: clamp(16px, 6vw, 40px);
+}
+
+.TourPackage1,
+.TourPackage2,
+.TourPackage3,
+.TourPackage4,
+.TourPackage5 {
+    width: 90vw;
+    padding: 0 0 10px 0;
+}
+
+.TourPackage1 img,
+.TourPackage2 img,
+.TourPackage3 img,
+.TourPackage4 img,
+.TourPackage5 img {
+    width: 85vw;
+    height: auto;
+    padding: 15px 0 0 0;
+}
+
+.TourPackage1 img:hover,
+.TourPackage2 img:hover,
+.TourPackage3 img:hover,
+.TourPackage4 img:hover,
+.TourPackage5 img:hover {
+    transform: none;
+}
+
+.TourPackage1 a:hover+.TourPackage1HP {
+    margin-top: auto;
+}
+
+.TourPackage2 a:hover+.TourPackage1HP {
+    margin-top: auto;
+}
+
+.TourPackage3 a:hover+.TourPackage1HP {
+    margin-top: auto;
+}
+
+.TourPackage4 a:hover+.TourPackage1HP {
+    margin-top: auto;
+}
+
+.TourPackage5 a:hover+.TourPackage1HP {
+    margin-top: auto;
+}
+
+.TourPackage1HP {
+    text-align: center;
+    width: 95vw;
+}
+
+.TourPackage1HP h3 {
+    font-size: 4.5vw;
+    font-size: clamp(16px, 4.5vw, 25px);
+}
+
+/******************************************************************* EndSection **************************************************************************/
+.endSection {
+    width: auto;
+    padding: 0 10px 0 10px;
+}
+
+.firstHalf {
+    flex-direction: column;
+}
+
+.inMainSection {
+    width: 98vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inMainSection ul {
+    margin-bottom: auto;
+}
+
+.legalPolicies {
+    height: auto;
+    width: 98vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.legalPolicies ul {
+    margin-bottom: 1rem;
+}
+
+.socialHandles {
+    height: auto;
+    width: 98vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.socialHandles ul {
+    gap: 1vw;
+}
+
+.socialHandles img {
+    height: 6vw;
+}
+
+.contactUs {
+    flex-direction: column-reverse;
+    margin-bottom: auto;
+    border-top: none;
+    justify-content: left;
+}
+
+.addressAndContactDetails {
+    font-weight: bold;
+    gap: 1rem;
+    border-left: none;
+    font-size: small;
+}
+
+.addressAndContactDetails ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyright {
+    align-items: center;
+    align-self: center;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.get {
+    padding-left: auto;
+    padding-top: auto;
+}
